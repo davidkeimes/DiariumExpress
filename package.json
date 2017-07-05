@@ -1,0 +1,15 @@
+{
+  "name": "express-restful-api",
+  "version": "1.0.0",
+  "description": "RESTful JSON API for the Polymer and React frontend apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "4.15.3",
+    "mongoose": "4.11.1"
+  },
+  "author": "David Keimes",
+  "license": "ISC"
+}
