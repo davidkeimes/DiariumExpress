@@ -4,6 +4,7 @@
   "description": "RESTful JSON API for the Polymer and React frontend apps",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon",
     "test": "test"
   },
   "dependencies": {
@@ -11,5 +12,5 @@
     "mongoose": "4.11.1"
   },
   "author": "David Keimes",
-  "license": "ISC"
+  "license": "MIT"
 }
