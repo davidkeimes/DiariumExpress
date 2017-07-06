@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "express": "4.15.3",
-    "mongoose": "4.11.1"
+    "mongoose": "4.11.1",
+    "body-parser": "1.17.2"
   },
   "author": "David Keimes",
   "license": "MIT"
