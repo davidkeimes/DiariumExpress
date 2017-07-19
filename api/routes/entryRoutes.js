@@ -14,4 +14,7 @@ module.exports = function (app) {
 
     app.route('/entries/journal/:journal')
         .get(entry.get_entries_by_journal);
+
+    app.route('/entries/search')
+        .post(entry.search_entries);
 };

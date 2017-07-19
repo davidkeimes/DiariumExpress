@@ -11,4 +11,7 @@ module.exports = function (app) {
         .get(journal.get_a_journal)
         .put(journal.update_a_journal)
         .delete(journal.delete_a_journal);
+
+    app.route('/journals/search')
+        .post(journal.search_journals);
 };

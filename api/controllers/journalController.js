@@ -52,3 +52,12 @@ exports.delete_a_journal = function (req, res) {
         res.json({ message: 'journal successfully deleted' });
     });
 };
+
+exports.search_journals = function (req, res) {
+    var re = '.*' + req.body.search + '.*';
+    Journal.find( { name: {'$regex': re, '$options': 'i'} }, function (err, journals) {
+        if (err)
+            res.send(err);
+        res.json(journals);
+    });
+}

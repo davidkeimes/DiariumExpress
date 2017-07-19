@@ -60,3 +60,12 @@ exports.get_entries_by_journal = function (req, res) {
         res.json(entries);
     });
 }
+
+exports.search_entries = function (req, res) {
+    var re = '.*' + req.body.search + '.*';
+    Entry.find( { name: {'$regex': re, '$options': 'i'} }, function (err, entries) {
+        if (err)
+            res.send(err);
+        res.json(entries);
+    }).where('journal').equals(req.body.journal);
+}
